@@ -1,0 +1,11 @@
+{
+    "name": "sextensions",
+    "url": "https://github.com/selibs/sextensions",
+    "license": "Apache",
+    "tags": ["extension"],
+    "version": "0.0.1",
+    "classPath": "src",
+    "description": "A small library with static extensions",
+    "contributors": ["smoothie"],
+    "releasenote": "Initial release"
+}
