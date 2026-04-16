@@ -19,6 +19,9 @@ extern class StringExt {
 	public static inline function trim(str:String):String
 		return StringTools.trim(str);
 
+	public static inline function fastCharAt(str:String, index:Int):Char
+		return StringTools.fastCodeAt(str, index);
+
 	public static inline function capitalize(word:String):String
 		return word.charAt(0).toUpperCase() + word.substr(1);
 
@@ -34,6 +37,6 @@ extern class StringExt {
 	public static inline function strip(str:String):String
 		return str.replace('\n', ' ');
 
-	public static inline function toCharArray(s:String):Array<Int>
+	public static inline function toCharArray(s:String):Array<Char>
 		return [for (i in 0...s.length) s.fastCodeAt(i)];
 }
