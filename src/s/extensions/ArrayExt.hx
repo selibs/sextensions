@@ -1,8 +1,11 @@
 package s.extensions;
 
-class ArrayExt {
+extern class ArrayExt {
+	public static inline function lastIndex<T>(a:Array<T>):Int
+		return a.length - 1;
+
 	public static inline function last<T>(a:Array<T>):T
-		return a[a.length - 1];
+		return a[lastIndex(a)];
 
 	public static inline function min(a:Array<Float>) {
 		var m = a[0];
